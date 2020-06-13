@@ -1,0 +1,15 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2 {
+  color: hotpink;
+}
+
+p:nth-last-child(2) {
+  color: lightslategray;
+}
+
+span {
+  font-style: italic;
+}
