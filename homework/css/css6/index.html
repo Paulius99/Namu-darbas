@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>email form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <fieldset class="first-fieldset">
+        <legend>
+          Jūsų informacija
+        </legend>
+        <label for="name" name="name">Vardas:</label>
+        <input id="name" type="text" /><br />
+        <label for="surname" name="surname">Pavardė:</label>
+        <input id="surname" type="text" />
+      </fieldset>
+      <fieldset>
+        <legend>
+          Klausimai
+        </legend>
+        <label for="question1">Kaip sužinojote apie mus?</label>
+        <select name="question1" id="question1" required>
+          <option value="">google</option>
+          <option value="volvo">facebook</option>
+          <option value="saab">heard somewhere</option> </select
+        ><br />
+        <label for="question2">Ar apsilankysite vėl?</label><br />
+        <label for="yes">Taip</label>
+        <input type="radio" name="yes" id="yes" />
+        <label for="no">Ne</label>
+        <input type="radio" name="no" id="no" />
+        <label for="mabye">Galbūt</label>
+        <input type="radio" name="mabye" id="mabye" /><br />
+        <label for="opinion">Ką manote apie kursą?</label><br />
+        <textarea name="opinion" id="opinion" cols="100" rows="10"></textarea
+        ><br />
+        <label for="checkbox"
+          >Pažymėkite programavimo/žymėjimo kalbas su kuriomis esate
+          susipažinę</label
+        ><br />
+        <div class="last-question">
+          <input type="checkbox" name="C#" id="C#" />
+          <label for="C#">C#</label>
+          <input type="checkbox" name="JAVA" id="JAVA" />
+          <label for="JAVA">JAVA</label>
+          <input type="checkbox" name="PHP" id="PHP" />
+          <label for="PHP">PHP</label><br />
+          <input type="checkbox" name="HTML" id="HTML" />
+          <label for="HTML">HTML</label>
+          <input type="checkbox" name="CSS" id="CSS" />
+          <label for="CSS">CSS</label>
+          <input type="checkbox" name="JavaScript" id="JavaScript" />
+          <label for="JavaScript">JavaScript</label><br />
+          <input type="checkbox" name="python" id="python" />
+          <label for="python">python</label>
+          <input type="checkbox" name="Ruby" id="Ruby" />
+          <label for="Ruby">Ruby</label><br />
+          <input type="submit" value="Siūsti" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
