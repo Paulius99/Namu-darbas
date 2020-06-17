@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12 grid page</title>
+
+    <style>
+      div#content > div {
+        border: 1px solid red;
+      }
+
+      div#content {
+        display: flex;
+      }
+
+      div.additional-info div.google-maps-wrapper span iframe {
+        width: 100%;
+        height: auto;
+        border: none;
+      }
+
+      .col-1 {
+        width: 8.33%;
+      }
+      .col-2 {
+        width: 16.66%;
+      }
+      .col-3 {
+        width: 25%;
+      }
+      .col-4 {
+        width: 33.33%;
+      }
+      .col-5 {
+        width: 41.66%;
+      }
+      .col-6 {
+        width: 50%;
+      }
+      .col-7 {
+        width: 58.33%;
+      }
+      .col-8 {
+        width: 66.66%;
+      }
+      .col-9 {
+        width: 75%;
+      }
+      .col-10 {
+        width: 83.33%;
+      }
+      .col-11 {
+        width: 91.66%;
+      }
+      .col-12 {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 600px) {
+       div#content {
+         flex-direction: column;
+       }
+
+        div#content > div {
+          width: 100%;
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        div#content > div {
+          border: none;
+        }
+      }
+
+      @media screen and (max-width: 100px) {
+        * {
+          border: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="head" class="col-12">
+      Header
+    </div>
+    <div id="content" class="col-12">
+      <div class="col-3 image-thumbs">
+        Small images
+      </div>
+      <div class="col-6 main-content-wrapper">
+        <p>Welcome to our page</p>
+      </div>
+      <div class="col-3 additional-info">
+        <div class="google-maps-wrapper">
+          <span>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.3118664973676!2d25.329217016225478!3d54.7217289802902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd96c28807f9e9%3A0xbb43e441f1997ac5!2sSaul%C4%97tekio%20al.%209%2C%20Vilnius%2010221!5e0!3m2!1slt!2slt!4v1592324769374!5m2!1slt!2slt"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div id="footer-main" class="col-12">
+      Footer
+    </div>
+  </body>
+</html>

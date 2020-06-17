@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff6a3;
+  padding: 15px;
+  margin: 3px;
+}
+
+form label {
+  width: 200px;
+  display: inline-block;
+}
+
+form label,
+input {
+  margin: 2px;
+}
+
+form input[type="text"],
+input[type="email"] {
+  width: 250px;
+  height: 23px;
+}
+
+form input[type="submit"] {
+  width: 458px;
+  height: 25px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #c2ffbd;
+  margin: 3px;
+  padding: 15px;
+}
+
+.table {
+  width: 92%;
+  align-self: center;
+}
+
+p.center {
+  display: flex;
+  justify-content: center;
+}
+
+.line1 {
+  display: flex;
+  background-color: #c7b8ff;
+}
+
+.line2 {
+  display: flex;
+  background-color: #c2ffbd;
+}
+
+.line3 {
+  display: flex;
+}
+
+.el-one, .el-two, .el-three {
+  width: 60%;
+  padding: 5px 20px 5px 20px;
+}
+
+.el-two {
+  width: 15%;
+}
+
+.el-three {
+  width: 25%;
+}
+
+.center {
+  align-self: center;
+}
+
+.table p {
+  margin: 0;
+}
+
+.table .line1, .line2, .line3 p, .line2 p {
+  border: 1px solid black;
+}
