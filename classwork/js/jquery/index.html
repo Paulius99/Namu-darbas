@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jquery</title>
+  <style>
+    #page-main-title {
+      position: relative;
+      border: 1px dotted black;
+    }
+
+    .hover {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="page-main-title">jquery</h1>
+  <p id="">our texts and bla bla</p>
+  <input type="text" id="input-text">
+  <input type="button" onclick="alertInsertedText()" id="button">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      let testText = 'hi';
+
+      let javascriptSelector = document.getElementById('page-main-title');
+
+      let jQueryselector = $('#demo-text');
+
+      console.log(jQueryselector);
+
+      function alertInsertedText() {
+        let $inputValue = $('#input-text').val();
+        alert($inputValue);
+      }
+
+      function animateH1OnClick() {}
+
+      $('#page-main-title').click(function () {
+        $('#page-main-title').animate({
+            left: '200px',
+            borderWidth: '20px',
+          },
+          6000,
+          function () {
+            alert('viskas tvarkoj');
+          }
+        );
+      });
+
+      $('#page-main-title').hover(function () {
+          $('#page-main-title').addClass('hover');
+        },
+        function () {
+          $('#page-main-title').removeClass('hover');
+        })
+    });
+  </script>
+
+</body>
+
+</html>

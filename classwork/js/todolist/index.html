@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>todolist</title>
+</head>
+
+<body>
+  <h1>To do list</h1>
+  <p>What i have to do today:</p>
+  <ul id="to-do-list">
+    <li>Don't forget to breath</li>
+  </ul>
+  <input id="add-new-input" type="text">
+  <button id="add-new-item-button">add new item</button>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('button#add-new-item-button').click(function () {
+
+        let $inputValue = $
+        ('#add-new-input');
+        if($inputValue.val() !== "") {
+        var $counter = $('ul#to-do-list').children().length;
+        $('ul#to-do-list').append('<li>' + $counter + '. ' + $inputValue.val() + '</li>');
+
+        $inputValue.val('');
+        }
+      });
+      $('ul li').click(function () {
+        $(this).remove();
+      });
+    });
+  </script>
+</body>
+
+</html>

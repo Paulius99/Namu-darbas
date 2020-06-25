@@ -1,12 +1,10 @@
-let age = document.getElementById('age').value;
+document.getElementById('submit').addEventListener('click', validate);
 
 function validate() {
-  if(age < 18) {
+  let age = document.getElementById('age').value;
+  if (age < 18) {
     alert("you're too young");
   } else {
     alert('hi!');
   }
 }
-
-document.getElementById('submit').addEventListener('click', validate());
-
