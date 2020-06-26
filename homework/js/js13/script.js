@@ -12,5 +12,7 @@ var images = [
 ];
 
 for (i = 0; i < images.length; i++) {
-  document.querySelector('.container').appendChild(document.createElement('<img src=' + images[i] + '>'));
+  var x = document.createElement("IMG");
+  x.setAttribute("src", images[i]);
+  document.querySelector('.container').appendChild(x);
 }
