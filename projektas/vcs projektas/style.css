@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -35,7 +36,6 @@ nav {
 
 .nav-links {
   display: flex;
-  width: 30%;
   justify-content: space-around;
   font-size: 30px;
 }
@@ -79,6 +79,7 @@ nav {
     padding: 10px;
     margin: 10px;
   }
+
   nav {
     justify-content: space-around;
   }
@@ -103,13 +104,16 @@ nav {
     transition: transform 0.3s ease;
     z-index: 2;
   }
+
   .nav-links li {
     opacity: 0;
   }
+
   .burger {
     display: block;
     cursor: pointer;
   }
+
   nav {
     background-color: rgb(37, 37, 37);
     opacity: 95%;
@@ -125,6 +129,7 @@ nav {
     opacity: 0;
     transform: translateY(50px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0px);
@@ -134,9 +139,11 @@ nav {
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
+
 .toggle .line2 {
   opacity: 0;
 }
+
 .toggle .line3 {
   transform: rotate(+45deg) translate(-5px, -6px);
 }
@@ -150,7 +157,7 @@ nav {
 }
 
 .first-slide-text {
-  width: 100vw;
+  width: 100%;
   height: 92vh;
   display: flex;
   flex-direction: column;
@@ -172,7 +179,7 @@ nav {
   margin-bottom: 10px;
 }
 
-button {
+.first-slide-text button {
   background: rgba(51, 51, 51, 0.9);
   width: 200px;
   height: 50px;
@@ -185,7 +192,7 @@ button {
   z-index: -5;
 }
 
-button:focus {
+.first-slide-text button:focus {
   outline: none;
 }
 
@@ -205,10 +212,58 @@ button:focus {
   0% {
     transform: translatey(0px);
   }
+
   50% {
     transform: translatey(-20px);
   }
+
   100% {
     transform: translatey(0px);
   }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 80vh;
+}
+
+
+
+.carousel-container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide {
+  display: flex;
+  height: 600px;
+}
+
+.carousel-slide  img{
+  width: 100%;
+}
+
+#prevBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  left: 5%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  right: 5%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
 }

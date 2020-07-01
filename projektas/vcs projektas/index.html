@@ -1,57 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
-      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div class="slide-one">
-      <img
-        class="main-photo"
-        src="/vcs projektas/imgs/beach-beautiful-boulders-calm-waters-315987.jpg"
-        alt=""
-      />
-      <div class="main">
-        <nav>
-          <div class="logo">
-            <h4>Nav</h4>
-          </div>
-          <ul class="nav-links">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-            <li>
-              <a href="#">Login</a>
-            </li>
-          </ul>
-          <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-        </nav>
-        <div class="first-slide-text">
-          <h1>Discover world today</h1>
-          <h2>Book your trip now</h2>
-          <button>Browse trips</button>
-          <i class="fas fa-arrow-down"></i>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="slide-one">
+    <img class="main-photo" src="/imgs/beach-birds-calm-clouds-219998.jpg" alt="" />
+    <div class="main">
+      <nav>
+        <div class="logo">
+          <h4>Nav</h4>
         </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">Login</a>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+      <div class="first-slide-text">
+        <h1>Discover world today</h1>
+        <h2>Book your trip now</h2>
+        <button>Browse trips</button>
+        <i class="fas fa-arrow-down"></i>
       </div>
     </div>
-    <script src="app.js"></script>
-  </body>
+  </div>
+  <main>
+    <h1>Choose from over 100 countries!</h1>
+    <div class="carousel-container">
+      <i class="fas fa-arrow-left" id="prevBtn"></i>
+      <i class="fas fa-arrow-right" id="nextBtn"></i>
+      <div class="carousel-slide">
+        <img src="/imgs/architecture-art-beautiful-buddhism-415708.jpg" id="lastClone" alt="" />
+        <img src="/imgs/beach-beautiful-boulders-calm-waters-315987.jpg" alt="" />
+        <img src="/imgs/orange-powerboat-between-medium-rise-buildings-208701 (1).jpg" alt="" />
+        <img src="/imgs/flight-landscape-nature-sky-36717.jpg" alt="" />
+        <img src="/imgs/aerial-photography-of-city-1388030.jpg" id="firstClone" alt="" />
+      </div>
+    </div>
+  </main>
+  <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,31 @@
+const sliderSlide = document.querySelector('#slider-imgs');
+const sliderImgs = document.querySelectorAll('#slider-imgs img');
+const prevBtn = document.querySelector('#prevBtn');
+const nextBtn = document.querySelector('#nextBtn');
+
+let counter = 1;
+const size = sliderImgs[0].clientWidth;
+
+sliderSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+//button litener
+nextBtn.addEventListener('click', () => {
+  sliderSlide.style.transition = "transform 0.4s ease-in-out";
+  counter++;
+  sliderSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+});
+
+prevBtn.addEventListener('click', () => {
+  sliderSlide.style.transition = "transform 0.4s ease-in-out";
+  counter--;
+  sliderSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+});
+
+sliderSlide.addEventListener('transitionend', () => {
+  if (sliderImgs[counter].id === 'lastclone') {
+    carouselSlide.style.transition = 'none';
+    console.log('none');
+    counter = sliderImgs.length -2;
+    sliderSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  }
+});

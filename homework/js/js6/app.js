@@ -5,6 +5,6 @@ function validate() {
   if (age < 18) {
     alert("you're too young");
   } else {
-    alert('hi!');
+    alert("hi!");
   }
 }
