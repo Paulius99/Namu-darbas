@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header,
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(240.64deg, #E88484 0%, rgba(255, 199, 0, 0.65) 100%);
+}
+.main-containers{
+  position: absolute;
+  bottom: 0;
+  color: rgb(114, 114, 114, 0);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home {
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100px;
+  height: 100px;
+}
+
+.home i {
+  font-size: 20;
+  color: blue;
+}
+
+.home a {
+  color: blue;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-login,
+.main-wrapper-signup {
+  width: 300px;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.signup-form {
+  height: 900px;
+}
+
+form input {
+  width: 85%;
+  height: 35px;
+  border-radius: 50px;
+  outline: none;
+  padding: 5px;
+  border: none;
+  background-color: rgb(141, 140, 143);
+}
+
+form input:focus {
+  background-color: rgb(109, 109, 109);
+}
+
+form button {
+  background-color: rgb(19, 153, 52);
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  width: 40%;
+}
+
+form button:hover {
+  background-color: rgb(19, 114, 24);
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.img-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.img-text p,
+.main-wrapper-signup h2 {
+  position: absolute;
+  z-index: 2;
+  text-decoration: none;
+  font-size: 50px;
+  color: #333333;
+  margin: 0;
+}

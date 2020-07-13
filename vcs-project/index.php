@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./fullpage.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+  <title>Fullpage</title>
+</head>
+
+<body>
+  <div class="purchase">
+    <i class="fas fa-plane"></i>
+  </div>
+  <nav>
+    <div class="logo">
+      <p>NAV</p>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="gallery.php">Gallery</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+      <li>
+        <a href="login/index.php">Login</a>
+      </li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+  <div id="fullpage">
+    <section class="section s1">
+      <header class="slide-one">
+        <img src="./imgs/adventure-arid-barren-coast-210307.jpg" alt="" />
+        <main>
+          <div class="wrapper-main">
+            <div class="wrapper-main-text">
+              <h6>Book your best trip ever</h6>
+              <h5>Today</h5>
+            </div>
+            <div class="wrapper-main-icon">
+              <div class="icon">
+                <i class="fas fa-plane"></i>
+                <p>Over 2000 destinations</p>
+              </div>
+              <div class="icon">
+                <i class="far fa-envelope-open"></i>
+                <p>Fast comunication</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Over 5000 places to visit</p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </header>
+    </section>
+    <section class="section s2">
+      <img src="./imgs/architecture-art-beautiful-buddhism-415708.jpg" alt="">
+      <div class="darken"></div>
+      <main>
+        <div class="centered-wrapper">
+          <div class="container-main">
+            <div class="container-small">
+              <h2>THAILAND</h2>
+              <h3>7 nights</h3>
+              <div class="hotel">
+                <h3>Dual tower hotel</h3><br>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>1 swimming pool, Breakfast in the room, 24-hour front desk Free WiFi, Parking Outdoor pool, air
+                conditioning.
+              </h4>
+              <p>All included(flight, food, etc...)</p>
+            </div>
+          </div>
+          <div class="right-container">
+            <div class="right-text">
+              <h3>From: Fri, Jul 3, 2020</h3>
+              <h3>To: Sat, Jul 18, 2020</h3>
+            </div>
+            <button class="price-btn">1799$ | Book now</button>
+          </div>
+        </div>
+      </main>
+    </section>
+    <section class="section s3">
+      <img src="./imgs/sea-dawn-nature-sky-127160.jpg" alt="">
+      <div class="darken"></div>
+      <main>
+        <div class="centered-wrapper reverse">
+          <div class="container-main">
+            <div class="container-small">
+              <h2>SRI LANKA</h2>
+              <h3>7 nights</h3>
+              <div class="hotel">
+                <h3>Dual tower hotel</h3><br>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>1 swimming pool, Breakfast in the room, 24-hour front desk Free WiFi, Parking Outdoor pool, air
+                conditioning.
+              </h4>
+              <p>All included(flight, food, etc...)</p>
+            </div>
+          </div>
+          <div class="left-container">
+            <div class="left-text">
+              <h3>From: Fri, Jul 3, 2020</h3>
+              <h3>To: Sat, Jul 18, 2020</h3>
+            </div>
+            <button class="price-btn">1799$ | Book now</button>
+          </div>
+        </div>
+      </main>
+    </section>
+    <section class="section s4">
+      <img src="./imgs/america-architecture-bay-boat-208745.jpg" alt="">
+      <div class="darken"></div>
+      <main>
+        <div class="centered-wrapper">
+          <div class="container-main">
+            <div class="container-small">
+              <h2>U S A</h2>
+              <h3>7 nights</h3>
+              <div class="hotel">
+                <h3>Dual tower hotel</h3><br>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>1 swimming pool, Breakfast in the room, 24-hour front desk Free WiFi, Parking Outdoor pool, air
+                conditioning.
+              </h4>
+              <p>All included(flight, food, etc...)</p>
+            </div>
+          </div>
+          <div class="right-container">
+            <div class="right-text">
+              <h3>From: Fri, Jul 3, 2020</h3>
+              <h3>To: Sat, Jul 18, 2020</h3>
+            </div>
+            <button class="price-btn">1799$ | Book now</button>
+          </div>
+        </div>
+      </main>
+    </section>
+    <section class="section s5">
+      <footer>
+        <div class="footer-wrapper-main">
+          <div class="footer-wrapper">
+            <div class="left-text-wrapper">
+              <p>Contact us</p>
+              <p>Email us: <a href="mailto:mail.pauliusg@gmail.com">Send email</a></p>
+              <p>Call us: <a href="tel:555-555-5555">8866442200</a></p>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2306.254612263954!2d25.237782000000003!3d54.687546999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDQxJzE1LjIiTiAyNcKwMTQnMTYuMCJF!5e0!3m2!1slt!2slt!4v1594038884539!5m2!1slt!2slt"
+              width="800" height="380" frameborder="0" style="border:0;" allowfullscreen="false" aria-hidden="false"
+              tabindex="0"></iframe>
+            <div class="right-text-wrapper">
+              <p>Visit us</p>
+              <p>Vingio parkas</p>
+              <p>54.687547, 25.237782
+              </p>
+            </div>
+          </div>
+        </div>
+        <h4 class="copyright">Tripland</h4>
+      </footer>
+    </section>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+    integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+  <script src="./fullpage.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
