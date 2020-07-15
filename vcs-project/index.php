@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="./fullpage.min.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/fullpage.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
     integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
   <title>Fullpage</title>
@@ -16,30 +16,7 @@
   <div class="purchase">
     <i class="fas fa-plane"></i>
   </div>
-  <nav>
-    <div class="logo">
-      <p>NAV</p>
-    </div>
-    <ul class="nav-links">
-      <li>
-        <a href="#">Home</a>
-      </li>
-      <li>
-        <a href="gallery.php">Gallery</a>
-      </li>
-      <li>
-        <a href="#">Contact</a>
-      </li>
-      <li>
-        <a href="login/index.php">Login</a>
-      </li>
-    </ul>
-    <div class="burger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-  </nav>
+  <?php include_once('nav.php'); ?>
   <div id="fullpage">
     <section class="section s1">
       <header class="slide-one">
@@ -54,7 +31,7 @@
               <div class="icon">
                 <i class="fas fa-plane"></i>
                 <p>Over 2000 destinations</p>
-              </div>
+              </div>+
               <div class="icon">
                 <i class="far fa-envelope-open"></i>
                 <p>Fast comunication</p>
@@ -173,7 +150,7 @@
           <div class="footer-wrapper">
             <div class="left-text-wrapper">
               <p>Contact us</p>
-              <p>Email us: <a href="mailto:mail.pauliusg@gmail.com">Send email</a></p>
+              <p>Email us: <a href="mailto:project@project.com">Send email</a></p>
               <p>Call us: <a href="tel:555-555-5555">8866442200</a></p>
             </div>
             <iframe
@@ -188,7 +165,7 @@
             </div>
           </div>
         </div>
-        <h4 class="copyright">Tripland</h4>
+        <h4 class="copyright">Tripland<?php echo ' ' . '©' . date('Y');?></h4>
       </footer>
     </section>
   </div>
@@ -197,8 +174,7 @@
     integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
     integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
-  <script src="./fullpage.min.js"></script>
-  <script src="app.js"></script>
+  <script src="js/fullpage.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
-
 </html>

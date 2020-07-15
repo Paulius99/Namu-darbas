@@ -76,9 +76,6 @@ nav {
   width: 30px;
 }
 
-.burger {
-  display: none;
-}
 
 .nav-links {
   position: absolute;
@@ -125,7 +122,7 @@ nav {
 }
 
 .toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-8px, 6px);
 }
 
 .toggle .line2 {
@@ -133,7 +130,7 @@ nav {
 }
 
 .toggle .line3 {
-  transform: rotate(+45deg) translate(-5px, -6px);
+  transform: rotate(+45deg) translate(-9px, -6px);
 }
 
 header {
@@ -353,12 +350,17 @@ footer h4 {
   text-align: center;
 }
 
+footer p a {
+  text-decoration: none;
+  color: turquoise;
+}
+
 .left-text-wrapper,
 .right-text-wrapper {
   display: flex;
   flex-direction: column;
   height: 150px;
-  font-weight: 100;
+  font-weight: 300;
   color: white;
   font-size: 25px;
   justify-content: space-around;
@@ -444,6 +446,11 @@ footer h4 {
     height: 80%;
   }
 
+  footer p a {
+    text-decoration: none;
+    color: turquoise;
+  }
+
   .left-text-wrapper {
     text-align: center;
   }
@@ -463,7 +470,7 @@ footer h4 {
     display: flex;
     flex-direction: column;
     height: 150px;
-    font-weight: 100;
+    font-weight: 300;
     color: white;
     font-size: 25px;
     justify-content: space-around;
@@ -493,11 +500,10 @@ footer h4 {
   width: 100%;
   height: 100vh;
   pointer-events: none;
-  display: flex;
-  justify-content: center;
 }
 
 .purchase i {
+  opacity: 0;
   position: absolute;
   color: white;
   font-size: 100px;
@@ -505,19 +511,51 @@ footer h4 {
   height: 100px;
   transform: rotate(270deg);
   bottom: 0;
-  transition: 1s ease-out;
-  animation: flight 0.5s ease;
-  opacity: 0;
+  left: 47vw;
+  transition: 1s ease-in-out;
+}
+
+.purchase.done {
+  animation: yay 2s ease-in-out;
+}
+
+.purchase i.show {
+  animation: flight 0.5s ease-in-out 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.purchase i.done {
+  animation: done 2s ease-in-out;
 }
 
 @keyframes flight {
   from {
-    bottom: 0px;
+    bottom: 0vh;
     opacity: 0;
   }
 
   to {
-    bottom: 100px;
+    bottom: 10vh;
     opacity: 1;
+  }
+}
+
+@keyframes done {
+  from {
+    opacity: 1;
+    bottom: 10vh;
+  }
+
+  to {
+    opacity: 1;
+    bottom: 46vh;
+  }
+}
+
+@keyframes yay {
+  from {}
+
+  to {
+    background-color: black;
   }
 }

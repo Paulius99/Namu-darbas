@@ -31,7 +31,7 @@
 						$sql = "INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd) VALUES ('$first', '$last', '$email', '$uid', '$pwdHashed');";
 						$result = mysqli_query($conn, $sql);
 						if ($result) {
-							header('Location: ../signup.php?signup=success');
+							header('Location: ../index.php');
 							exit();
 						} else {
 							header('Location: ../signup.php?signup=failedtosave');

@@ -27,19 +27,31 @@ TweenMax.defaultEase = Linear.easeOut;
 
 let buttons = document.querySelectorAll('.price-btn');
 let darkContainers = document.querySelectorAll('.darken');
+let plane = document.querySelector('.purchase i');
+let purchase = document.querySelector('.purchase');
 
 buttons.forEach((button) => {
   button.addEventListener('mouseover', () => {
     darkContainers.forEach((darkContainer) => {
       darkContainer.classList.add('invisible');
-      console.log('done');
     });
+    plane.classList.add('show');
   });
   button.addEventListener('mouseout', () => {
     darkContainers.forEach((darkContainer) => {
       darkContainer.classList.remove('invisible');
-      console.log('done');
     });
+    plane.classList.remove('show');
+  });
+});
+
+buttons.forEach((button) => {
+  button.addEventListener('click', () => {
+    plane.classList.add('done');
+    purchase.classList.add('done');
+    window.setTimeout(function () {
+      window.location.href = 'http://localhost/vcs-project/purchased.php';
+    }, 2000);
   });
 });
 

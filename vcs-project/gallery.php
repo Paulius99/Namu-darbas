@@ -5,34 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery</title>
-  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="css/gallery.css">
 </head>
 
 <body>
-  <nav>
-    <div class="logo">
-      <p>NAV</p>
-    </div>
-    <ul class="nav-links">
-      <li>
-        <a href="#">Home</a>
-      </li>
-      <li>
-        <a href="#">About</a>
-      </li>
-      <li>
-        <a href="#">Contact</a>
-      </li>
-      <li>
-        <a href="#">Login</a>
-      </li>
-    </ul>
-    <div class="burger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-  </nav>
+<?php include_once('nav.php'); ?>
   <header>
     <h1>GALLERY</h1>
   </header>
@@ -88,7 +65,7 @@
         </div>
       </div>
     </div>
-    <h4 class="copyright">Tripland</h4>
+    <h4 class="copyright">Tripland<?php echo ' ' . '©' . date('Y');?></h4>
   </footer>
   <div class="modal">
     <img class="full-img" src="" alt="">
@@ -115,8 +92,8 @@
     })
   </script>
 
-  <script src="gallery.js"></script>
-  <script src="app.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
