@@ -8,12 +8,12 @@ previews.forEach((preview) => {
     modal.classList.add('open');
     fullImg.classList.add('open');
     const fullImgSrc = preview.getAttribute('data-fullimg');
-    fullImg.src = `./imgs/${fullImgSrc}`;
+    fullImg.src = `./images/${fullImgSrc}`;
   });
 });
 
 modal.addEventListener('click', (e) => {
-  if(e.target.classList.contains('modal')) {
+  if (e.target.classList.contains('modal')) {
     modal.classList.remove('open');
     fullImg.classList.remove('open');
   }

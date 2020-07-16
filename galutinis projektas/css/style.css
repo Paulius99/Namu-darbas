@@ -9,7 +9,7 @@
 
 .logo {
   font-size: 30px;
-  font-weight: 200;
+  font-weight: 300;
   color: white;
 }
 
@@ -22,7 +22,7 @@ header img {
 }
 
 nav ul li a {
-  font-weight: 200;
+  font-weight: 300;
   font-size: 30px;
   line-height: 47px;
   padding: 0 15px 0 15px;
@@ -36,7 +36,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 8vh;
+  height: 10vh;
   text-transform: uppercase;
 }
 
@@ -49,7 +49,7 @@ nav {
 .nav-links a {
   color: white;
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 6px;
 }
 
 .nav-links li {
@@ -98,12 +98,13 @@ nav {
 .burger {
   display: block;
   cursor: pointer;
+  z-index: 2;
+  position: relative;
 }
 
 nav {
   background-color: rgb(37, 37, 37, 0);
 }
-
 
 .nav-active {
   transform: translate(0%);
@@ -145,67 +146,47 @@ header main {
 }
 
 .wrapper-main {
-  height: 70%;
-  width: 60%;
-  min-height: 60%;
-  background: rgba(16, 16, 16, 0.2);
-  border: 8px solid white;
+  height: 35%;
+  width: 80%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   flex-direction: column;
-}
-
-.wrapper-main-icon {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  height: 40%;
-  width: 100%;
-}
-
-.icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  height: 100%;
   text-align: center;
 }
 
-.icon p {
-  font-size: 1.6vw;
+.wrapper-main * {
   color: white;
 }
 
-.icon i {
-  font-size: 4vw;
-  color: white;
+.wrapper-main h1 {
+  font-size: 4.5vw;
+  font-weight: 400;
 }
 
-.wrapper-main h6 {
-  color: white;
-  font-size: 3vw;
-  letter-spacing: 0.5vw;
+.wrapper-main h2 {
+  font-size: 2.7vw;
   font-weight: 300;
 }
 
-.wrapper-main h5 {
-  color: white;
-  font-weight: 300;
-  text-transform: uppercase;
-  font-size: 9vw;
-  letter-spacing: 3vw;
-}
-
-.wrapper-main-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.wrapper-main button {
+  background-color: rgb(236, 87, 87);
+  padding: 13px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
   width: 100%;
-  height: 60%;
+  font-size: 20px;
+  transition: 1s ease;
+}
+
+.wrapper-main a {
+  width: 200px;
+}
+
+.wrapper-main button:hover {
+  background-color: rgb(255, 120, 120);
+  transform: scale(1.1, 1.1);
 }
 
 section img {
@@ -373,14 +354,30 @@ footer p a {
 
 @media screen and (max-width: 900px) {
 
-  section main {
-    align-items: inherit;
-    padding-top: 100px;
+  .wrapper-main {
+    height: 45%;
+    width: 80%;
+  }
+
+  .container-main {
+    border: 10px solid white;
+    width: 100%;
+    height: 80%;
+  }
+
+  .wrapper-main h1 {
+    font-size: 9vw;
+    font-weight: 500;
+  }
+
+  .wrapper-main h2 {
+    font-size: 5vw;
+    font-weight: 400;
   }
 
   section main .centered-wrapper {
     width: 95%;
-    height: 95%;
+    height: 80%;
     flex-direction: column;
   }
 

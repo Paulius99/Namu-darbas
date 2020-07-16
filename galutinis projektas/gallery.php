@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery</title>
+  <link rel="shortcut icon" href="images\navigation-3482965_960_720.png" />
   <link rel="stylesheet" href="css/gallery.css">
 </head>
 
@@ -16,32 +17,32 @@
   <div class="container">
     <div class="gallery">
       <figure class="gallery__item gallery__item--1">
-        <img src="imgs/aerial-photography-of-city-1388030.jpg" alt="Gallery image 1" data-fullimg="aerial-photography-of-city-1388030.jpg"
+        <img src="images/aerial-photography-of-city-1388030.jpg" alt="Gallery image 1" data-fullimg="aerial-photography-of-city-1388030.jpg"
         class="gallery__img">
       </figure>
       <figure class="gallery__item gallery__item--2">
-        <img src="imgs/silhouette-of-mountains-1323550.jpg" alt="Gallery image 2" data-fullimg="silhouette-of-mountains-1323550.jpg" class="gallery__img">
+        <img src="images/silhouette-of-mountains-1323550.jpg" alt="Gallery image 2" data-fullimg="silhouette-of-mountains-1323550.jpg" class="gallery__img">
       </figure>
       <figure class="gallery__item gallery__item--3">
-        <img src="imgs/beach-beautiful-boulders-calm-waters-315987.jpg" alt="Gallery image 3" data-fullimg="beach-beautiful-boulders-calm-waters-315987.jpg" class="gallery__img">
+        <img src="images/beach-beautiful-boulders-calm-waters-315987.jpg" alt="Gallery image 3" data-fullimg="beach-beautiful-boulders-calm-waters-315987.jpg" class="gallery__img">
       </figure>
       <figure class="gallery__item gallery__item--4">
-        <img src="imgs/america-architecture-bay-boat-208745.jpg" alt="Gallery image 4" data-fullimg="america-architecture-bay-boat-208745.jpg" class="gallery_img">
+        <img src="images/america-architecture-bay-boat-208745.jpg" alt="Gallery image 4" data-fullimg="america-architecture-bay-boat-208745.jpg" class="gallery_img">
       </figure>
       <figure class="gallery__item gallery__item--5">
-        <img src="imgs/orange-powerboat-between-medium-rise-buildings-208701 (1).jpg" alt="Gallery image 5" data-fullimg="orange-powerboat-between-medium-rise-buildings-208701 (1).jpg" class="gallery_img">
+        <img src="images/orange-powerboat-between-medium-rise-buildings-208701 (1).jpg" alt="Gallery image 5" data-fullimg="orange-powerboat-between-medium-rise-buildings-208701 (1).jpg" class="gallery_img">
       </figure>
       <figure class="gallery__item gallery__item--6">
-        <img src="imgs/seaport-during-daytime-132037.jpg" alt="Gallery image 6" data-fullimg="seaport-during-daytime-132037.jpg" class="gallery_img">
+        <img src="images/seaport-during-daytime-132037.jpg" alt="Gallery image 6" data-fullimg="seaport-during-daytime-132037.jpg" class="gallery_img">
       </figure>
       <figure class="gallery__item gallery__item--7">
-        <img src="imgs/orange-and-blue-skies-during-sunset-1048283.jpg" alt="Gallery image 7" data-fullimg="orange-and-blue-skies-during-sunset-1048283.jpg" class="gallery_img">
+        <img src="images/orange-and-blue-skies-during-sunset-1048283.jpg" alt="Gallery image 7" data-fullimg="orange-and-blue-skies-during-sunset-1048283.jpg" class="gallery_img">
       </figure>
       <figure class="gallery__item gallery__item--8">
-        <img src="imgs/aerial-photography-of-city-1388030.jpg" alt="Gallery image 8" data-fullimg="aerial-photography-of-city-1388030.jpg" class="gallery_img">
+        <img src="images/aerial-photography-of-city-1388030.jpg" alt="Gallery image 8" data-fullimg="aerial-photography-of-city-1388030.jpg" class="gallery_img">
       </figure>
       <figure class="gallery__item gallery__item--9">
-        <img src="imgs/silhouette-of-mountains-1323550.jpg" alt="Gallery image 9" data-fullimg="silhouette-of-mountains-1323550.jpg" class="gallery_img">
+        <img src="images/silhouette-of-mountains-1323550.jpg" alt="Gallery image 9" data-fullimg="silhouette-of-mountains-1323550.jpg" class="gallery_img">
       </figure>
     </div>
   </div>

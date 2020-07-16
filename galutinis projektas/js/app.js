@@ -55,10 +55,19 @@ buttons.forEach((button) => {
   });
 });
 
+var width = window.innerWidth;
+
+if (width < 1023) {
+  new fullpage("#fullpage", {
+    autoScrolling: true
+  });
+}
 
 
 new fullpage("#fullpage", {
   autoScrolling: true,
   navigation: true,
-  parallax: true
+  parallax: true,
+
+  anchors: ['section1', 'section2', 'section3', 'section4', 'section5']
 });

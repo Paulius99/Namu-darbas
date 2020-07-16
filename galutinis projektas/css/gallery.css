@@ -178,7 +178,7 @@ footer h4 {
 }
 
 nav ul li a {
-  font-weight: 200;
+  font-weight: 300;
   font-size: 30px;
   line-height: 47px;
   padding: 0 15px 0 15px;
@@ -205,7 +205,7 @@ nav {
 .nav-links a {
   color: white;
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 6px;
 }
 
 .nav-links li {
@@ -254,6 +254,8 @@ nav {
 .burger {
   display: block;
   cursor: pointer;
+  z-index: 2;
+  position: relative;
 }
 
 nav {

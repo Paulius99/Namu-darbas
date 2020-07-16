@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
   <link rel="stylesheet" href="Login.css">
+  <link rel="shortcut icon" href="../images/navigation-3482965_960_720.png" />
 </head>
 
 <body>
